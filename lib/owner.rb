@@ -44,7 +44,7 @@ Cat.all.select {|cat| cat.owner == self }
   end
 
   def walk_dogs
-  @pets[:dogs].each do |dog|
+  self.dogs.each do |dog|
     dog.mood = "happy"
   end
 end
