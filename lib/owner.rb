@@ -50,7 +50,7 @@ Cat.all.select {|cat| cat.owner == self }
 end
 
   def feed_cats
-@pets[:cats].each do |cat|
+self.cats.each do |cat|
   cat.mood = "happy"
   end
 end
