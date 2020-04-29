@@ -69,7 +69,7 @@ dogs.each do |dog|
 end
 cats.each do |cat|
   cat.mood = "nervous"
-  cats.owner = nil
+  cat.owner = nil
 end
 end
 end
