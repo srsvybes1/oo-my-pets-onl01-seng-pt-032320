@@ -1,3 +1,47 @@
 class Owner
-  # code goes here
+  attr_reader :species, :name
+  attr_accessor :pets
+  @@all = []
+  #@@pets = {:Dogs => [], :Cats => []}
+  def initialize(name)
+    @species = "human"
+    @name = name
+    @@all<<self
+   @pets = {:dogs => [], :cats => []}
+  end
+  def say_species
+"I am a #{species}."
+  end
+  def self.all
+    @@all
+  end
+  def self.count
+    @@all.length
+  end
+  def self.reset_all
+    @@all.clear
+  end
+  def pets
+  @dogs = dog
+  @cats = cat
+  end
+  def buy_dog(dog)
+    @pets[:dogs] << Dog.new(dog)
+  end
+  def walk_dogs
+  @pets[:dogs].each do |dog|
+    dog.mood = "happy"
+  end
+end
+  def feed_cats
+@pets[:cats].each do |cat|
+  cat.mood = "happy"
+  end
+end
+  def buy_cat(cat)
+    @pets[:cats]<< Cat.new(cat)
+  end
+  def list_pets
+   "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
+ end
 end
