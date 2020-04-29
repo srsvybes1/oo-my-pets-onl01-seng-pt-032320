@@ -56,7 +56,7 @@ end
 end
 
   def buy_cat(cat)
-    @pets[:cats]<< Cat.new(cat)
+    @pets[:cats]<< Cat.new(cat, self)
   end
 
   def list_pets
