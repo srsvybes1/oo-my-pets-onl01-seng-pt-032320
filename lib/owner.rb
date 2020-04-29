@@ -63,11 +63,11 @@ end
    "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
  end
 def sell_pets
-dogs.owner.each do |dog|
+dogs.each do |dog|
   dog.mood = "nervous"
   dog.owner = nil
 end
-cats.owner.each do |cat|
+cats.each do |cat|
   cat.mood = "nervous"
   cats.owner = nil
 end
