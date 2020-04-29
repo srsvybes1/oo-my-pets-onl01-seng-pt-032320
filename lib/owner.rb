@@ -22,7 +22,7 @@ class Owner
     @@all.clear
   end
   def pets
-    @pets = pets 
+    @pets = pets
   @dogs = dog
   @cats = cat
   end
