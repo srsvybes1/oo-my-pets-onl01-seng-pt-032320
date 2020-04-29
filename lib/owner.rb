@@ -72,3 +72,4 @@ cats.owner.each do |cat|
   cats.owner = nil
 end
 end
+end
